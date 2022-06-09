@@ -1,0 +1,6 @@
+#videoFondo {
+    width: 100vw;
+    height: 80vh;
+    position: fixed;
+    object-fit: cover;
+  }
