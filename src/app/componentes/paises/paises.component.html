@@ -1,0 +1,16 @@
+<mat-toolbar class="mat-primary mat-toolbar-single-row mat-elevatmat-z8" color="primary">
+    Paises
+</mat-toolbar>
+
+<div>
+    <button mat-raised-button color="primary" (click)="nuevo()">Agregar</button>
+    <button mat-raised-button color="accent" (click)="modificar()">Modificar</button>
+    <button mat-raised-button color="warn" (click)="verificarEliminar()">Eliminar</button>
+
+    <ngx-datatable class={{tema}} [headerHeight]="50" [footerHeight]="50" [rowHeight]="20" [rows]="paises"
+        [columns]="columnas" [columnMode]="modoColumna.force" [limit]="10" [selectionType]="tipoSeleccion.single"
+        (activate)="onActivate($event)" [rowHeight]="'auto'">
+
+    </ngx-datatable>
+
+</div>
