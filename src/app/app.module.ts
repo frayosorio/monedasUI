@@ -7,18 +7,31 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
 import { ReferenciasMaterialModule } from './referencias-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MonedasComponent } from './componentes/monedas/monedas.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { HttpClientModule } from '@angular/common/http';
+import { MonedaEditarComponent } from './componentes/moneda-editar/moneda-editar.component';
+import { FormsModule } from '@angular/forms';
+import { DecidirComponent } from './componentes/decidir/decidir.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    MenuPrincipalComponent
+    MenuPrincipalComponent,
+    MonedasComponent,
+    MonedaEditarComponent,
+    DecidirComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReferenciasMaterialModule,
     BrowserAnimationsModule,
+    NgxDatatableModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
